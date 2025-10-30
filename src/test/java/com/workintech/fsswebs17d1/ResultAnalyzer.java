@@ -1,4 +1,4 @@
-package com.workintech.fswebs17d1;
+package com.workintech.fsswebs17d1;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
@@ -54,7 +54,7 @@ public class ResultAnalyzer implements TestWatcher, AfterAllCallback {
                 .filter((data) -> data.name().equals("FAILED")).collect(Collectors.toList()).size();
 
         double score = (double) success / (success + failure);
-        String userId = "999998";
+        String userId = "300704";
 
         JSONObject json = new JSONObject();
         json.put("score", score);
