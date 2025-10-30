@@ -1,30 +1,19 @@
 package com.workintech.fsswebs17d1.entity;
 
 public class Animal {
-    private int id;
+    private Integer id;
     private String name;
 
-    public Animal() {
-    }
+    public Animal() {}
 
-    public Animal(int id, String name) {
+    public Animal(Integer id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public int getId() {
-        return id;
-    }
+    public Integer getId() { return id; }
+    public void setId(Integer id) { this.id = id; }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 }
